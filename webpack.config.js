@@ -1,7 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-    mode: 'development',
     entry: {
         index: './lib/index.tsx'
     },
@@ -21,25 +20,4 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'LUI',
-            template: 'index.html'
-        })
-    ],
-    // react/react-dom is external lib, we need configures as follows to exclude react/react-dom during source building
-    externals: {
-        react: {
-            commonjs: 'react',
-            commonjs2: 'react',
-            amd: 'react',
-            root: 'React',
-        },
-        'react-dom': {
-            commonjs: 'react-dom',
-            commonjs2: 'react-dom',
-            amd: 'react-dom',
-            root: 'ReactDOM',
-        },
-    }
 }

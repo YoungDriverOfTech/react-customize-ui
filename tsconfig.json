@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+      "outDir": "dist", // configuration that output file should be placed into dist directory
       "declaration": true,
       "baseUrl": ".",
       "module": "esnext",
