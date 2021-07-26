@@ -4,6 +4,6 @@ import Icon from './Icon'
 
 ReactDOM.render(
     <div>
-        <Icon name="weChat"/>
+        <Icon name="forward"/>
     </div>
-    , document.body);
+    , document.querySelector("#root"));
